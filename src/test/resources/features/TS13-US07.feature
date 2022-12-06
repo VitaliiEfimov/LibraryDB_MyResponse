@@ -1,4 +1,4 @@
-@wip@db
+@smoke@db
 Feature: Books module
   As a student, I should be able to borrow a book
   Scenario: Students borrow new books

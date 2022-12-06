@@ -45,6 +45,7 @@ public class US07_StudentBorrowNewBook {
                 break;
             }
         }
+
     }
 
     @Then("verify that book is shown in {string} page")

@@ -1,4 +1,4 @@
-@db
+@db@smoke
 Feature: Books module
   As a librarian, I should be able to add new books to the library
   Scenario Outline: Verify added book is matching with DB
