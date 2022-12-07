@@ -1,6 +1,6 @@
 node {
     stage('Clone code') {
-        git 'https://github.com/VitaliiEfimov/cucmber-junit-project'
+        git 'https://github.com/VitaliiEfimov/LibraryDB_MyResponse'
     }
 
     stage('Run tests'){
