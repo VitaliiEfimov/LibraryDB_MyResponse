@@ -3,8 +3,10 @@ package com.cydeo.library.step_definitions;
 import com.cydeo.library.utilities.DB_Util;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import junit.framework.AssertionFailedError;
 import org.junit.Assert;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,11 @@ List<String> listOfId = new ArrayList<>();
     public void verify_all_users_has_unique_id() {
         for (int i = 0; i < listOfId.size(); i++) {
             for (int j = 0; j < listOfId.size(); j++) {
+                try {
                     Assert.assertFalse(listOfId.get(i).equals(listOfId.get(j)) && i != j);
+                } catch (AssertionError e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -39,6 +45,11 @@ List<String> listOfId = new ArrayList<>();
     }
     @Then("verify the below columns are listed in result")
     public void verify_the_below_columns_are_listed_in_result(List<String> dataTable) {
-        Assert.assertEquals(dataTable,listOfAllColumns);
+        try {
+            Assert.assertEquals(dataTable, listOfAllColumns);
+        } catch (AssertionFailedError e) {
+            e.printStackTrace();
+        }
+
     }
 }
