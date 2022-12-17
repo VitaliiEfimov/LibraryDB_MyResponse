@@ -36,12 +36,12 @@
 
     <dependencies>
 
-        <!-- JUnit5 dependency -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.9.0</version>
-        </dependency>
+<!--        &lt;!&ndash; JUnit5 dependency &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter</artifactId>-->
+<!--            <version>5.9.0</version>-->
+<!--        </dependency>-->
 
         <!-- MySQL Driver   -->
         <dependency>
